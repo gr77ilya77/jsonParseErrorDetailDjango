@@ -1,5 +1,5 @@
 {
-  "name": "jsonParseErrorDetailDjango",
+  "name": "json-parse-error-detail-django",
   "version": "0.0.1",
   "description": "JS parser for string representation of django rest api class ErrorDetail",
   "main": "index.js",
@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/gr77ilya77/jsonParseErrorDetailDjango#readme",
   "publishConfig": {
-    "@YOUR-USERNAME:registry": "https://npm.pkg.github.com"
+    "gr77ilya77:registry": "https://npm.pkg.github.com"
   }
 }
