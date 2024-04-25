@@ -22,7 +22,6 @@ function jsonParseErrorDetailDjango(errorDetail, keyString = 'string', keyCode =
   ];
   try {
     s = r.reduce((s, v) => replaceAll(s, v.s, v.to), errorDetail);
-    console.log(s);
   } catch (error) {
     console.error('jsonParseErrorDetailDjango: ', error);
   } finally {
