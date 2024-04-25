@@ -9,7 +9,7 @@ function replaceAll(str, find, replace) {
 
 // errorDetail= "{'new_email': [ErrorDetail(string='Введите правильный адрес электронной почты.', code='invalid')]}"
 function jsonParseErrorDetailDjango(errorDetail, keyString = 'string', keyCode = 'code') {
-  let s = '{}';
+  let s = {};
   const r = [
     { s: `'`, to: `"` },
     { s: '[ErrorDetail(', to: '{' },
@@ -21,11 +21,11 @@ function jsonParseErrorDetailDjango(errorDetail, keyString = 'string', keyCode =
     { s: 'code', to: `"${keyCode}"` },
   ];
   try {
-    s = r.reduce((s, v) => replaceAll(s, v.s, v.to), errorDetail);
+    s = JSON.parse(r.reduce((s, v) => replaceAll(s, v.s, v.to), errorDetail));
   } catch (error) {
-    console.error('jsonParseErrorDetailDjango: ', error);
+    // console.error('jsonParseErrorDetailDjango: ', error);
   } finally {
-    return JSON.parse(s);
+    return s;
   }
 }
 
