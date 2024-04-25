@@ -16,9 +16,9 @@ function jsonParseErrorDetailDjango(errorDetail, keyString = 'string', keyCode =
     { s: `]`, to: `` },
     // { s: 'ErrorDetail(', to: '{' },
     { s: `)`, to: `}` },
-    { s: `=`, to: `:` },
-    { s: 'string', to: `"${keyString}"` },
-    { s: 'code', to: `"${keyCode}"` },
+    // { s: `=`, to: `:` },
+    { s: 'string=', to: `"${keyString}":` },
+    { s: 'code=', to: `"${keyCode}":` },
   ];
   try {
     s = JSON.parse(r.reduce((s, v) => replaceAll(s, v.s, v.to), errorDetail));

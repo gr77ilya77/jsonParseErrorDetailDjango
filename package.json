@@ -1,6 +1,6 @@
 {
   "name": "json-parse-error-detail-django",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "JS parser for string representation of django rest api class ErrorDetail",
   "main": "index.js",
   "scripts": {
