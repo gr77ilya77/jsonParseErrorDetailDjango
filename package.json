@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/gr77ilya77/jsonParseErrorDetailDjango#readme",
   "publishConfig": {
-    "gr77ilya77:registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com/gr77ilya77"
   }
 }
