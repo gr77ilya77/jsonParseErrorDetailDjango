@@ -1,0 +1,28 @@
+{
+    "name": "jsonParseErrorDetailDjango",
+    "version": "0.0.1",
+    "description": "JS parser for string representation of django rest api class ErrorDetail",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gr77ilya77/jsonParseErrorDetailDjango.git"
+    },
+    "keywords": [
+        "django",
+        "error",
+        "errorDetail",
+        "parser",
+        "parse",
+        "restApiError",
+        "djangoError"
+    ],
+    "author": "Ilya Grinkov",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/gr77ilya77/jsonParseErrorDetailDjango/issues"
+    },
+    "homepage": "https://github.com/gr77ilya77/jsonParseErrorDetailDjango#readme"
+}
